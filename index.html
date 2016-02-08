@@ -1,107 +1,133 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-<!--     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"> -->
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <title>Blog by chazshi</title>
-
-    <script src='js/delaunay.js'></script> 
-    <script src='js/TweenMax.js'></script>
-    <script src='js/calendar.js'></script>
-    <script src='js/Hozplayer.js'></script>
-  </head>
-
-  <body>
-    <div class="calendar">
-      <!-- ##日历 -->
-      <span>--:--:--</span>
-      <span>@@@@-@@-@@</span>
-    </div>
-    <div class="hozplayer clearfix">
-      <!-- ##播放器 -->
-      <img src="images/singer.jpg">
-      <div class="songandsinger">种种-陈粒</div>
-      <!-- <div class="lyricWrap">
-        <div class="lyricTxt">歌词歌词歌词歌词歌词</div>
-        <div class="lyricTxt">歌词歌词歌词歌词歌词</div>
-        <div class="lyricTxt">歌词歌词歌词歌词歌词</div>
-      </div> -->
-      <div class="ctrlBtn">
-        <div class="previewBtn"></div>
-        <div class="playpauseBtn"></div>
-        <div class="nextBtn"></div>
-      </div>
-      <div class="searchArea">
-        <input></input>
-        <div class="searchBtn"></div>
-        <div class="listBtn"></div>
-      </div>
-      <div class="listArea">
-        <div class="songlist">
-          <div>不能说的秘密1</div>
-          <div>不能说的秘密2</div>
-          <div>不能说的秘密3</div>
-          <div>不能说的秘密4</div>
-          <div>不能说的秘密5</div>
-          <div>不能说的秘密6</div>
-          <div>不能说的秘密7</div>
-          <div>不能说的秘密8</div>
-          <div>不能说的秘密9</div>
-          <div>不能说的秘密10</div>
-        </div>
-      </div>
-    </div>
-    <header>
-      <div class="container">
-        <h1>Chazshi's Blog</h1>
-        <h2>record my felling, every happy and sad moment.</h2>
-        <!-- download button -->
-        <!-- <section id="downloads"> 
-          <a href="https://github.com/chazshi/Blog/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/chazshi/Blog/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/chazshi/Blog" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section> -->
-        <div class="menubar clearfix">
-          <div class="menu_tab">主页</div>
-          <div class="menu_tab">随笔</div>
-          <div class="menu_tab">趣事</div>
-          <div class="menu_tab">留言板</div>
-          <div class="menu_tab">联系</div>
-        </div>
-        
-      </div>
-    </header>
-
-    <div class="content">
-      <div class="block rotatehorse clearfix">
-        <!-- ##旋转木马(360*505) -->
-        
-        <!-- <img src="images/haixiu.gif">
-        <img src="images/keai.gif"> -->
-        <div id="container">
-          <!-- 这里循环显示图片 -->
-        </div>
-        <!-- <img src="images/xiaomeilv.gif"> -->
-        <script src='js/pen.js'></script>   <!-- //为什么要放这里；放在文档中间等文档加载完成才执行 -->
-        
-      </div>
-      <div class="recordArea block clearfix">
-        <img src="images/katong1.gif">
-        <img src="images/katong2.gif">
-        ##block2 记录一些东西怎么样？
-      </div>
-      <div class="block">
-        ##block3 外链？下载链接？网盘？
-      </div>
-      <div class="block">
-        ##block4 备用吧
-      </div>
-    </div>
-    
-  </body>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalreset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>my flat-style blog.</title>
+</head>
+<body>
+	<div class="main-wrapper">
+		<header>
+			<nav>
+				<div class="logo"><a href="#">Shi`Blog</a></div>
+				<ul>
+					<li><a class="active" href="#">主页</a></li>
+					<li><a href="#">留言</a></li>
+					<li><a href="#">关于</a></li>
+					<li><a href="#">联系我</a></li>
+				</ul>
+			</nav><!-- 页头导航  -->
+			<div id="banner">
+				<div class="inner">
+					<h1>简介</h1>
+					<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci labore expedita, nemo eos rem, temporibus. Dignissimos incidunt, quibusdam nihil autem libero. Aut eligendi earum quas est veniam similique magni.</p>
+					<button id="main-btn">More about me.</button>
+					<div class="more">
+						<p class="more-txt">更多</p>
+						<br>
+						<span class="fa fa-arrow-down fa-lg"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<section class="green-section">
+				<div class="wrapper">
+					<div>
+						<h2>标题2</h2>
+						<div class="hr"></div>
+						<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sint consequuntur sed laborum beatae quas reprehenderit fugit maiores officia, facilis eos nobis ab ipsum error soluta officiis? Maiores labore, deserunt?</p>
+					</div>
+					<div class="icon-group">
+						<span class="icon">items1</span>
+						<span class="icon">items2</span>
+						<span class="icon">items3</span>
+					</div>
+				</div>
+			</section>
+			<section class="gray-section">
+				<div class="article-preview clearfix">
+					<div class="img-section">
+						<img src="img/pic01.jpg" alt="">
+					</div>
+					<div class="text-section">
+						<h2>标题2</h2>
+						<div class="sub-heading">副标题副标题</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, dignissimos totam cum odit vero inventore nam maiores numquam minima, mollitia corporis tempore? Tempora inventore ducimus possimus et, harum quam eaque!</p>
+					</div>
+				</div>
+				<div class="article-preview clearfix">
+					<div class="text-section">
+						<h2>标题2</h2>
+						<div class="sub-heading">副标题副标题</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, dignissimos totam cum odit vero inventore nam maiores numquam minima, mollitia corporis tempore? Tempora inventore ducimus possimus et, harum quam eaque!</p>
+					</div>
+					<div class="img-section">
+						<img src="img/pic02.jpg" alt="">
+					</div>
+				</div>
+				<div class="article-preview clearfix">
+					<div class="img-section">
+						<img src="img/pic03.jpg" alt="">
+					</div>
+					<div class="text-section">
+						<h2>标题2</h2>
+						<div class="sub-heading">副标题副标题</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, dignissimos totam cum odit vero inventore nam maiores numquam minima, mollitia corporis tempore? Tempora inventore ducimus possimus et, harum quam eaque!</p>
+					</div>
+				</div>
+			</section>
+			<section class="purple-section">
+				<div class="wrapper">
+				 	<div class="heading-wrapper">
+				 	<h2>标题</h2>
+				 	<div class="hr"></div>
+				 	<div class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis similique distinctio doloribus magni eum culpa esse explicabo amet quae earum quidem blanditiis nisi delectus tempora iste, nulla! Ipsa, minima delectus!</div>
+				 </div>
+				 <div class="card-group clearfix">
+				 	<div class="card">
+				 		<h3>标题3</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolore quaerat sunt quis debitis! Maiores ab quos nulla perspiciatis ad nobis, inventore maxime aperiam quisquam, in quasi reprehenderit, commodi ipsa.</p>
+				 	</div>
+				 	<div class="card">
+				 		<h3>标题3</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nostrum magnam, impedit dolorem natus! Praesentium rerum alias voluptatem odit explicabo, molestiae magni voluptatibus doloribus odio cum accusantium cupiditate commodi totam.</p>
+				 	</div>
+				 	<div class="card">
+				 		<h3>标题3</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolore quaerat sunt quis debitis! Maiores ab quos nulla perspiciatis ad nobis, inventore maxime aperiam quisquam, in quasi reprehenderit, commodi ipsa.</p>
+				 	</div>
+				 	<div class="card">
+				 		<h3>标题3</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nostrum magnam, impedit dolorem natus! Praesentium rerum alias voluptatem odit explicabo, molestiae magni voluptatibus doloribus odio cum accusantium cupiditate commodi totam.</p>
+				 	</div>
+				 	<div class="card">
+				 		<h3>标题3</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolore quaerat sunt quis debitis! Maiores ab quos nulla perspiciatis ad nobis, inventore maxime aperiam quisquam, in quasi reprehenderit, commodi ipsa.</p>
+				 	</div>
+				 	<div class="card">
+				 		<h3>标题3</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nostrum magnam, impedit dolorem natus! Praesentium rerum alias voluptatem odit explicabo, molestiae magni voluptatibus doloribus odio cum accusantium cupiditate commodi totam.</p>
+				 	</div>
+				 </div>	
+				</div>
+			</section>
+		</div>
+		<footer>
+			<ul class="share-group">
+				<li>item1</li>
+				<li>item2</li>
+				<li>item3</li>
+				<li>item4</li>
+				<li>item5</li>
+			</ul>
+			<div class="copy">
+				&copy Chazshi-2016
+			</div>
+		</footer><!-- 页脚  -->
+	</div>
+	
+</body>
 </html>
