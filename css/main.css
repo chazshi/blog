@@ -39,6 +39,7 @@ nav ul li a {
 }
 .active {
 	border-bottom: 5px solid #fff;
+	/*border-top: 5px solid #fff;*/
 }
 #banner .inner {
 	max-width: 300px;
@@ -56,16 +57,24 @@ h1 {
 }
 #main-btn {
 	border: none;
-	background: #333;
+	/*background: #333;*/
 	color: #eee;
-	padding: 10px 12px;
-	border-radius: 6px;
+	padding: 15px 12px;
+	border-radius: 10px;
 	font-size: 15pt;
 	letter-spacing: 4px;
 	/*position: relative;
 	top: 20px;*/
-	margin-top: 20px;
+	margin: 40px;
 	background: #18a;
+}
+#banner .inner .photo {
+	max-width: 100px;
+	text-align: center;
+	margin: 20px auto;
+	opacity: .6;
+	border: 1px solid #18a;
+	border-radius: 10px;
 }
 #banner .inner .more {
 	width: 60px;
@@ -79,6 +88,10 @@ h1 {
 #banner .inner .more .more-txt {
 	font-size: 12pt;
 	color: #000;
+	font-weight: 700;
+}
+#banner .inner .more span {
+	font-size: 20pt;
 	font-weight: 700;
 }
 .hr {
@@ -120,12 +133,15 @@ h2 {
 }
 .green-section .icon-group .icon {
 	display: inline-block;
-	width: 80px;
-	height: 80px;
-	background: #000;
+	width: 60px;
+	height: 60px;
 	transform: rotate(45deg);
-	margin: 20px;
-	background: #07464E;
+	margin: 30px;
+	background: #89CFD8;
+}
+.green-section .icon-group .icon img {
+	margin: 12px auto;
+	transform: rotate(-45deg);
 }
 .gray-section {
 	background: #252f34;
@@ -162,7 +178,7 @@ p {
 .text-section > *{
 	max-width: 80%;
 	text-align: center;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 .clearfix:after { /* 清除浮动  */
 	content: '';
@@ -237,14 +253,19 @@ ul.share-group {
 	display: block;
 	/*width: 1080px;*/
 	margin: 0 auto;
-	padding: 50px;
+	padding: 30px;
+	/*border-bottom: 1px solid #fff;*/
 }
 .share-group li {
 	display: inline-block;
 	padding: 10px;
 }
+.share-group li a img {
+	width: 60px;
+}
 .copy {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	font-size: 15pt;
 }
 .main-wrapper {
 	background: #444 url(../img/3.jpg);
@@ -252,4 +273,21 @@ ul.share-group {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+}
+.toolbar {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+.toolbar ul li a img {
+	width: 20px;
+	padding: 10px;
+	background: #fff;
+	opacity: .6;
+	border-radius: 6px;
+}
+embed {
+	position: absolute;
+	right: 30px;
+	top: 30px;
 }
