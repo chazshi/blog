@@ -72,7 +72,7 @@ h1 {
 	max-width: 100px;
 	text-align: center;
 	margin: 20px auto;
-	opacity: .6;
+	background: rgba(255,255,255,0.5);
 	border: 1px solid #18a;
 	border-radius: 10px;
 }
@@ -80,8 +80,7 @@ h1 {
 	width: 60px;
 	margin: 80px auto;
 	text-align: center;
-	background: #fff;
-	opacity: .4;
+	background:rgba(30,30,30,0.6);
 	padding: 5px;
 	border-radius: 6px;
 }
@@ -139,10 +138,25 @@ h2 {
 	margin: 30px;
 	background: #89CFD8;
 }
-.green-section .icon-group .icon img {
-	margin: 12px auto;
+.green-section .icon-group .icon span {
+	width: 60px;
+	height: 60px;
+	font-size: 25pt;
+	color: #453A59;
+	/*margin: auto;*/
 	transform: rotate(-45deg);
+	position: relative;
+	/*left: 50%;
+	top: 50%;*/
+	/*margin-left: width/2;
+	margin-top: height/2;*/
 }
+.green-section .icon-group .icon span:before {
+	position: relative;
+	left: 2%;
+	top: 28%;
+}
+
 .gray-section {
 	background: #252f34;
 	color: #fff;
@@ -260,8 +274,10 @@ ul.share-group {
 	display: inline-block;
 	padding: 10px;
 }
-.share-group li a img {
+.share-group li a span {
 	width: 60px;
+	font-size: 30pt;
+	color: #000;
 }
 .copy {
 	padding-bottom: 10px;
@@ -290,4 +306,7 @@ embed {
 	position: absolute;
 	right: 30px;
 	top: 30px;
+}
+a:active {
+	opacity: .6;
 }
