@@ -7,11 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	<!-- 引入FontAwesome -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/jquery.min.js"></script>	<!-- 引入jquery -->
-	<script src="js/anchor.js">
-		//var anchorId = document.getElementById("topAnchor");
-		
-		//moveToAnchor(anchorId); 
-	</script>	<!-- 引入anchor -->
+	<script src="js/main.js"></script>	<!-- main.js -->
 	<!-- <script type="text/javascript" res="http://ip.chinaz.com/getip.aspx"></script> -->
 	
 	<title>my flat-style blog.</title>
@@ -21,15 +17,15 @@
 		<header>
 			<!-- <bgsound  src="res/Pianoboy-Annabelle.mp3" autostart="true" loop="true"/> -->
 			<nav>
-				<div class="logo" id="topAnchor"><a href="#">Shi`Blog</a></div>
+				<div class="logo">Shi`Blog</div>
 				<ul>
-					<li><a class="active" href="#">主页</a></li>
-					<li><a href="#">留言</a></li>
-					<li><a href="#">关于</a></li>
-					<li><a href="#">联系我</a></li>
+					<li id="home-page" class="active" onclick="navSwitch('#home-page')">主页</li>
+					<li id="liuyan-page" onclick="navSwitch('#liuyan-page')">留言</li>
+					<li id="about-page" onclick="navSwitch('#about-page')">关于</li>
+					<li id="lianxi-page" onclick="navSwitch('#lianxi-page')">联系我</li>
 				</ul>
 			</nav><!-- 页头导航  -->
-			<embed src="res/Pianoboy-Annabelle.mp3" hidden="true" autostart="true" loop="1" volume="10">
+			<!-- <embed src="res/Pianoboy-Annabelle.mp3" hidden="true" autostart="true" loop="1" volume="10"> -->
 			<div id="banner">
 				<div class="inner">
 					<h1 id="sss">枯黄的树叶</h1>
@@ -39,7 +35,7 @@
 						<img class="photo" src="res/leaf.jpg" alt="">
 					</a>
 					<!-- <div id="main-btn">more about me.</div> -->
-					<div class="more">
+					<div class="more" onclick="moveToAnchor('.content');">
 						<p class="more-txt">更多</p>
 						<br>
 						<span class="fa fa-arrow-down fa-lg"></span>
@@ -163,7 +159,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="mailto:dzscz_123@126.com">
 						<span class="fa fa-envelope-o fa-lg"></span>
 						<!-- <img src="img/mail.svg" alt=""> -->
 					</a>
@@ -176,12 +172,12 @@
 		<div class="toolbar">
 			<ul>
 				<li>
-					<a onclick="moveToAnchor('#topAnchor');">
+					<a onclick="moveToAnchor('#banner');">
 						<img src="img/br_up_48.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a>
+					<a href="javascript:void(0);" onclick="addFavorite('Shi`s Blog',location.href)">
 						<img src="img/bookmark_2_48.png" alt="">
 					</a>
 				</li>
@@ -191,6 +187,12 @@
 					</a>
 				</li>
 			</ul>
+		</div>
+		<div class="mask">
+			<div class="wrapper">
+				<!-- <img src="img/luckyStar.jpg" alt=""> -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iure, et nemo rerum necessitatibus quas alias ipsam omnis modi. Impedit non magni vel nostrum? Error aut, molestias nisi autem officiis.</p>
+			</div>
 		</div>
 	</div>
 	
